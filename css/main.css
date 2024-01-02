@@ -1,0 +1,179 @@
+                            /* Aqui comienza todo lo que es CSS de INDEX */
+
+@font-face {
+    font-family: "roboto";
+    src: url(../font/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+}
+ul {
+    list-style-type: none;
+    
+}
+
+/* aca comienza el diseño mediante css de todo lo que es header */
+
+.encabezado {
+    background-color:#022F40;
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 1rem 4rem;
+}
+.logo  {
+    width: 23rem;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.7rem;
+    text-align: left;
+}
+
+.menu-button {
+    color: white;
+    text-decoration: none;
+}
+
+/* aca termina el diseño mediante css de todo lo que es header */
+
+/* aca comienza todo el diseño mediante css de todo lo que es HERO */
+.render1 {
+    width: 45rem;
+    border: solid 1rem;
+    border-color: #AAABBC;
+}
+
+.hero {
+    background-color: #022F40;
+    color: white;
+    display: flex;
+    padding: 2rem;
+    gap: 10rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero-title {
+    font-size: 3rem;
+}
+
+.hero-text {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 4rem;
+}
+
+.hero-button {
+    font-size: 1.5rem;
+    display: inline-block;
+    color: white;
+    margin-top: 1rem;
+    margin-left: 17.5rem;
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+}
+
+/* aca termina todo el diseño mediante css de todo lo que es HERO */
+
+/* aca comienza todo el diseño mediante css de todo lo que es parte del main, seccion de funcionamiento del servicio */
+
+.funcion1 {
+    padding: .8rem;
+    display: flex;
+    justify-content: center;
+    background-color: #AAABBC;
+}
+
+.funcionamiento {
+    display: flex;
+    align-items: center;
+    background-color: #AAABBC;
+
+}
+
+.title-hacer {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.text-hacer {
+    margin-right: 700px;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+.casa {
+    width: 15rem;
+    margin-left: 554px;
+}
+.lapiz {
+    width: 17.5rem;
+    margin-left: 535px;
+
+}
+.text-hacer2 {
+    margin-right: 700px;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+}
+
+/* aca termina todo el diseño mediante css de todo lo que es parte del main, seccion de funcionamiento del servicio */
+
+/* aca comienza todo el diseño mediante css de todo lo que es parte del footer */
+
+.footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+.footer-1 {
+    flex: 1.7;
+    font-size: 1.2rem;
+    margin-left: 150px;
+}
+
+.footer-2 {
+    flex: 0.5;
+    font-size: 1.2rem;
+    margin-left: 90px;
+}
+
+.footer-3 {
+    flex: 1;
+    font-size: 1.2rem;
+    margin-right: 90px;
+}
+
+.footer-4 {
+    flex: 0.5;
+    font-size: 1.2rem;
+}
+
+.icon-red-social {
+    font-size: 1.5rem;
+    
+}
+
+.copy {
+    margin-top: 40px;
+}
+
+/* aca termina todo el diseño mediante css de todo lo que es parte del footer */
+
+                                /* aqui termina todo CSS de INDEX */
+
+                                /* aqui comienza todo CSS de PROYECTOS */
+
