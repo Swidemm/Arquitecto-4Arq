@@ -1,4 +1,4 @@
-                            /* Aqui comienza todo lo que es CSS de INDEX */
+/* Aqui comienza todo lo que es CSS de INDEX */
 
 @font-face {
     font-family: "roboto";
@@ -56,12 +56,14 @@ ul {
 .hero {
     background-color: #022F40;
     color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: 9fr 1fr 1fr;
+    grid-template-areas: 
+    "hero-title" "render 1";
     padding: 2rem;
     gap: 10rem;
+    text-align: center;
     align-items: center;
-    justify-content: center;
-
 }
 
 .hero-title {
@@ -70,18 +72,16 @@ ul {
 
 .hero-text {
     font-size: 1.5rem;
-    margin-top: 1rem;
-    margin-left: 4rem;
+    margin-top: 0.5rem;
 }
 
 .hero-button {
     font-size: 1.5rem;
     display: inline-block;
     color: white;
-    margin-top: 1rem;
-    margin-left: 17.5rem;
     border: 1px solid white;
     padding: 0.5rem;
+    margin-top: 1rem;
     border-radius: 2rem;
     text-decoration: none;
 }
