@@ -173,8 +173,6 @@ ul {
         align-items: normal;
         text-align: start;
     }
-    .hacer-foto {
-    }
     .hacer-texto {
     grid-column: 2/3;
     grid-row: 1/2;
