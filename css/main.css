@@ -99,7 +99,7 @@ ul {
         grid-row: 1/2;
     }
     .render-grid {
-        width: 25rem;
+        width: 35rem;
     }
     .hero-right-grid {
         grid-row: 2/3;
@@ -147,6 +147,11 @@ ul {
 .text-hacer2 {
     font-size: 1.5rem;
     padding: 0.8rem;
+}
+@media (max-width: 1100px) {
+    .funcionamiento {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* aca termina todo el diseño mediante css de todo lo que es parte del main, seccion de funcionamiento del servicio */
