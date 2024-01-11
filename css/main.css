@@ -59,8 +59,6 @@ ul {
     grid-template-columns: 5fr 1fr 1.2fr; 
      /* 5fr 1fr 0.5fr para FHD */
      /* 5fr 1fr 1.2fr para QHD*/
-    grid-template-areas: 
-    "hero-title" "render 1";
     padding: 2rem;
     text-align: center;
     align-items: center;
@@ -89,6 +87,25 @@ ul {
     color: black;
 }
 
+@media (max-width: 1100px) {
+    
+    .hero-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 1rem;
+    }
+    .hero-left-grid {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .render-grid {
+        width: 25rem;
+    }
+    .hero-right-grid {
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+}
 /* aca termina todo el diseño mediante css de todo lo que es HERO */
 
 /* aca comienza todo el diseño mediante css de todo lo que es parte del main, seccion de funcionamiento del servicio */
@@ -182,42 +199,52 @@ ul {
 
         /* aqui comienza todo CSS de PROYECTOS */
 
-.proyecto {
+
+.hero2 {
     background-color: #022F40;
-    color: white;
-    height: 100vh;
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+}
+.proyecto {
+    font-size: 3rem;
+    padding: 2rem;
+}
+.proyectos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "title title title title"
-    "imagen1 imagen1 imagen 2 imagen 2";
-    column-gap: 3rem;
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
 }
-.hero-proyecto {
-    background-color:#AAABBC;
+.tarjeta1 {
+    background-color:#AAABBC ;
+    border: solid;
+    border-color: #A24936;
+    border-radius: 1%;
+    border-style: dashed;
+    grid-column: 2/3;
 }
-.render2 {
-    width: 45rem;
-    border: solid 1rem;
-    border-color: #AAABBC;
+.tarjeta2 {
+    background-color:#AAABBC ;
+    border: solid;
+    border-color: #A24936;
+    border-radius: 1%;
+    border-style: dashed;
+    grid-column: 3/4;
 }
-
-.img-left {
-    grid-area: imagen1;
-}
-.img-right {
-    grid-area: imagen2;
-}
-
-.title {
-    padding: 3rem;
+.titulopro {
+    display: flex;
     font-size: 2rem;
-    text-align: center;
-    grid-area: title;
-}
-
-.description {
+    color: #000000;
     padding: 1rem;
-    font-size: 1.5rem;
-    text-align: center;
+    justify-content: center;
+}
+.renderspro {
+    padding: 1rem;
+    width: 45rem;
+}
+.explicativo {
+    font-size: 1rem;
+    justify-content: center;
 }
