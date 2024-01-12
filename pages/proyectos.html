@@ -5,73 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto4arq</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
 
 </head>
 <body>
     <!-- Todo lo que es header, logo y menu -->
     <header class="encabezado" id="inicio">
-        <a href="../index.html"><img src="../img/P4arq original.png" alt="" class="logo"></a>
+        <div></div>
+        <a href="../index.html"><img src="../img/P4arq original.png" alt="" class="logogrande"></a>
+        <a href="../index.html"><img src="../img/P4arq original pequeño.png" alt="" class="logopequeno"></a>
         <ul class="menu">
-            <li><a href="./proyectos.html" class="menu-button">Proyectos</a></li>
+            <li><a href="#inicio" class="menu-button">Proyectos</a></li>
             <li><a href="./quienes-somos.html" class="menu-button">Quienes somos</a></li>
             <li><a href="./contacto.html" class="menu-button">Contacto</a></li>
             <li><a href="./galeria.html" class="menu-button">Galeria</a></li>
             <li><a href="./trabaja-nosotros.html" class="menu-button">Trabaja con nosotros</a></li>
         </ul>
-
-
+        <nav class="navbar navbar-dark bg-transparent row col-7">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Proyecto 4Arq</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#inicio">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./quienes-somos.html">Quienes Somos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./galeria.html">Galeria</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./trabaja-nosotros.html">Trabaja con nosotros</a>
+                      </li>
+                      </a>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
                 <!-- Aca comienza el cuerpo -->
     <main class="hero2">
-        <section class="proyecto">
-            <h2 class="proyecto 2"> ¡Nuestros proyectos!</h2>
-        </section>
-    <section class="proyectos">
-        <div class="tarjeta1">
-            <p class="titulopro">Pasaje malteria Hudson</p>
-            <img src="../img/1eros_10 - Photo.jpg" alt="render malteria exterior" class="renderspro">
-            <p class="explicativo">Aqui se puede apreciar distintos renders del exterior del pasaje de la malteria, el cual fue requerido para asegurar un camino mas seguro y eficiente para todos los visitantes</p>
+        <div>
+            <h2 class="titulopro2">PROYECTO: MALTERIA HUDSON</h2>
         </div>
-        <div class="tarjeta2">
-            <p class="titulopro">Pasaje malteria Hudson</p>
-            <img src="../img/1eros_10 - Photo.jpg" alt="render malteria exterior" class="renderspro">
-            <p class="explicativo">Aqui se puede apreciar distintos renders del exterior del pasaje de la malteria, el cual fue requerido para asegurar un camino mas seguro y eficiente para todos los visitantes</p>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/1eros_1 - Photo.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/1eros_4 - Photo.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/1eros_3 - Photo.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </section>
+        <div>
+            <h2 class="titulopro2">Puntos clave del proyecto:</h2>
+        </div>
+        <div class="card-group">
+            <div class="card">
+              <img src="../img/arriba del puente.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Estructura de acero</h5>
+                <p class="card-text">La estructura general se encuentra soportada por acero en forma triangular, permitiendo una gran estabilidad estructural, disminuyendo su peso.</p>
+                <p class="card-text"><small class="text-body-secondary"></small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../img/1eros_10 - Photo.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Espacios verdes y de autoservicio</h5>
+                <p class="card-text">La malteria, una vez abierta al publico, va a contar con grandes espacios verdes y caminos para los visitantes, ademas de puestos de comida y bebida.</p>
+                <p class="card-text"><small class="text-body-secondary"></small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../img/1eros_8 - Photo.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pasarela superior</h5>
+                <p class="card-text">El ultimo agregado al proyecto, fue la pasarela superior, esta misma permite una mayor cantidad de visitantes, permitiendo que estos mismos logren caminar con mayor eficiencia y seguridad.</p>
+                <p class="card-text"><small class="text-body-secondary"></small></p>
+              </div>
+            </div>
+          </div>
     </main>
         <!-- aca el footer compuesto por links y iconos mediante bootstraps -->
-    <footer class="footer">
-        <div class="footer-1">
-            <p class> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ab debitis aspernatur ipsa in esse! Porro repudiandae necessitatibus non iste, totam dolore neque dolores magnam in, maxime consequuntur eveniet voluptatibus.</p>
-            <p class="copy">© Copyright 2023  Proyecto4arq</p>
-        </div>
-        <div class="footer-2">
-            <ul>
-                <li><a href="#inicio" class="menu-button">Inicio</a></li>
-                <li><a href="./pages/trabaja-nosotros.html" class="menu-button">Trabaja con nosotros</a></li>
-                <li><a href="./pages/proyectos.html" class="menu-button">Servicios</a></li>
-                <li><a href="./pages/quienes-somos.html" class="menu-button">Informacion</a></li>
-            </ul>
-        </div>
-        <div class="footer-3">
-            <ul>
-                <li>Sobre nosotros</li>
-                <li>Contacto</li>
-                <li>Novedades</li>
-                <li>Cultura</li>
-            </ul>
-        </div>
-        <div class="footer-4">
-            <ul>
-                <li><a href="https://www.facebook.com/" class="menu-button"><i class="icon-red-social bi bi-facebook"></i></a></li>
-                <li><a href="https://twitter.com/home" class="menu-button"><i class="icon-red-social bi bi-twitter-x"></i></a></li>
-                <li><a href="https://www.instagram.com/" class="menu-button"><i class="icon-red-social bi bi-instagram"></i></a></li>
-                <li><a href="https://www.tiktok.com" class="menu-button"><i class="icon-red-social bi bi-tiktok"></i></a></li>
-            </ul>
-        </div>
-    </footer>
-
-
+        <footer class="footer">
+            <div class="footer-1">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ab debitis aspernatur ipsa in esse! Porro repudiandae necessitatibus non iste, totam dolore neque dolores magnam in, maxime consequuntur eveniet voluptatibus.</p>
+                <p class="copy">© Copyright 2023  Proyecto4arq</p>
+            </div>
+            <div class="footerresp">
+                <p class="copy">© Copyright 2023  Proyecto4arq</p>
+                <p>todos los derechos reservados</p>
+            </div>
+            <div class="footer-2">
+              <ul>
+                  <li><a href="../index.html" class="menu-button">Inicio</a></li>
+                  <li><a href="./trabaja-nosotros.html" class="menu-button">Trabaja con nosotros</a></li>
+                  <li><a href="./quienes-somos.html" class="menu-button">Informacion</a></li>
+              </ul>
+              
+          </div>
+          <div class="footer-3">
+              <ul>
+                  <li><a href="./proyectos.html" class="menu-button">Proyectos</a></li>
+                  <li><a href="./galeria.html" class="menu-button">Galeria</a></li>
+              </ul>
+          </div>
+            <div class="footer-4">
+                <ul>
+                    <li><a href="https://www.facebook.com/" class="menu-button"><i class="icon-red-social bi bi-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/home" class="menu-button"><i class="icon-red-social bi bi-twitter-x"></i></a></li>
+                    <li><a href="https://www.instagram.com/" class="menu-button"><i class="icon-red-social bi bi-instagram"></i></a></li>
+                    <li><a href="https://www.tiktok.com" class="menu-button"><i class="icon-red-social bi bi-tiktok"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -114,7 +114,12 @@ ul {
 .hero-button:hover {
     color: black;
 }
-
+.titulopro2 {
+    margin: 1rem;
+}
+.borde {
+    background-color: #A24936;
+}
 @media (max-width: 1110px) {
     
     .hero-grid {
@@ -305,6 +310,12 @@ ul {
 
 .copy {
     margin-top: 40px;
+}
+
+@media (min-width: 1287px) {
+    .footerresp {
+        display: none;
+    }
 }
 
 @media (max-width: 1286px) {
