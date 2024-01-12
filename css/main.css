@@ -26,10 +26,13 @@ ul {
     align-items: center;
     padding: 0.5rem 3rem;
 }
-.logo  {
+.logogrande  {
     width: 23rem;
 }
 
+.logopequeno  {
+    width: 10rem;
+}
 .menu {
     display: flex;
     gap: 2rem;
@@ -42,6 +45,30 @@ ul {
 }
 .menu-button:hover {
     color: black;
+}
+
+@media (min-width: 1186px) {
+    .navbar {
+        display: none;
+    }
+    .logopequeno {
+        display: none;
+    }
+}
+@media (max-width: 1185px) {
+    .menu {
+        display: none;
+    }
+    .navbar {
+        display: show;
+        flex: 19rem;
+    }
+    .logogrande  {
+        display: none;
+    }
+    .logopequeno {
+        display: show;
+    }
 }
 
 /* aca termina el diseño mediante css de todo lo que es header */
@@ -280,6 +307,21 @@ ul {
     margin-top: 40px;
 }
 
+@media (max-width: 1286px) {
+    .footer-1 {
+        display: none;
+    }
+}
+@media (max-width: 737px) {
+    .footer-3 {
+        display: none;
+    }
+}
+@media (max-width: 502px) {
+    .footer-2 {
+        display: none;
+    }
+}
 /* aca termina todo el diseño mediante css de todo lo que es parte del footer */
 
         /* aqui termina todo CSS de INDEX */
