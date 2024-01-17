@@ -112,6 +112,10 @@ ul {
     text-decoration: none;
 }
 
+.hero-button:hover {
+    color: black;
+}
+
 .titulopro2 {
     margin: 1rem;
 }
