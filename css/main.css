@@ -111,9 +111,7 @@ ul {
     border-radius: 2rem;
     text-decoration: none;
 }
-.hero-button:hover {
-    color: black;
-}
+
 .titulopro2 {
     margin: 1rem;
 }
@@ -172,7 +170,7 @@ ul {
         grid-row: 1/2;
     }
     .render-grid {
-        width: 19rem;
+        width: 20rem;
     }
     .hero-right-grid {
         grid-row: 2/3;
@@ -193,7 +191,7 @@ ul {
         grid-row: 1/2;
     }
     .render-grid {
-        width: 15rem;
+        width: 19rem;
     }
     .hero-right-grid {
         grid-row: 2/3;
