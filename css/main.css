@@ -47,6 +47,7 @@ ul {
     color: black;
 }
 
+
 @media (min-width: 1186px) {
     .navbar {
         display: none;
