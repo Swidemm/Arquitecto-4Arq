@@ -65,8 +65,8 @@ ul {
   }
   
   .menu-button:hover {
-    color: #AAABBC;
-    transition-delay: 0.5s;
+    font-size: 1.85rem;
+    transition-delay: 0.3s;
   }
   
   .menu-button:hover::before {
@@ -100,7 +100,7 @@ ul {
 }
 @media (max-width: 1284px) {
     .menu-button {
-        font-size: 1.3rem;
+        font-size: 1.29rem;
     }
 }
 @media (min-width: 1193px) {
@@ -181,12 +181,10 @@ ul {
     width: 100%;
   }
 
-.titulopro2 {
-    margin: 1rem;
-}
 .borde {
     background-color: #A24936;
 }
+
 @media (max-width: 1110px) {
     
     .hero-grid {
@@ -347,6 +345,23 @@ ul {
     gap: 1rem;
 }
 
+.footer-button {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-button:hover {
+    font-size: 1.3rem;
+    color: #AAABBC;
+    transition: 0.5s;
+}
+
+.footer-button-social:hover {
+    font-size: 1.8rem;
+    color: #AAABBC;
+    transition: 0.5s;
+}
+
 .footer-1 {
     flex: 1.7;
     font-size: 1.2rem;
@@ -365,7 +380,6 @@ ul {
 
 .icon-red-social {
     font-size: 1.5rem;
-    
 }
 
 .copy {
@@ -397,10 +411,22 @@ ul {
 
 .hero2 {
     background-color: #022F40;
-    color: rgb(255, 255, 255);
-    padding: 2rem;
+    color: #ffffff;
     text-align: center;
     align-items: center;
+}
+.carru {
+    border-style: solid;
+    border-radius: 0.5rem;
+}
+.titulopro3 {
+    display: inline-block;
+    position: relative;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 0.2rem;
+    border-color: #AAABBC;
+    border-style: solid;
 }
 .proyecto {
     font-size: 3rem;
@@ -428,13 +454,6 @@ ul {
     border-style: dashed;
     grid-column: 3/4;
 }
-.titulopro {
-    display: flex;
-    font-size: 2rem;
-    color: #000000;
-    padding: 1rem;
-    justify-content: center;
-}
 .renderspro {
     padding: 1rem;
     width: 45rem;
@@ -442,4 +461,10 @@ ul {
 .explicativo {
     font-size: 1rem;
     justify-content: center;
+}
+
+@media (max-width: 550px) {
+    .titulopro3 {
+        font-size: 1.2rem;
+    }
 }
