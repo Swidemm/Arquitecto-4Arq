@@ -90,9 +90,6 @@ ul {
     transition-delay: 0.4s;
     color: aliceblue;
   }
-  
-
-
 @media (max-width: 1376px) {
     .menu-button {
         font-size: 1.5rem;
