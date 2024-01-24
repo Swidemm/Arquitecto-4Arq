@@ -43,10 +43,6 @@ ul {
     color: white;
     text-decoration: none;
 }
-.menu-button:hover {
-    color: black;
-}
-
 .menu-button {
     background: transparent;
     border: none;
@@ -69,7 +65,7 @@ ul {
   }
   
   .menu-button:hover {
-    color: #022F40;
+    color: #AAABBC;
     transition-delay: 0.5s;
   }
   
