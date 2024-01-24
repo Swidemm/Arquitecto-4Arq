@@ -1,0 +1,406 @@
+@charset "UTF-8";
+/* Aqui comienza todo lo que es CSS de INDEX */
+@font-face {
+  font-family: "roboto";
+  src: url(../font/Roboto-Regular.ttf);
+}
+* {
+  margin: 0;
+  margin-bottom: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* aca comienza el diseño mediante css de todo lo que es header */
+.encabezado {
+  background-color: #022F40;
+  display: flex;
+  color: white;
+  align-items: center;
+  padding: 0.5rem 3rem;
+}
+.encabezado .logogrande {
+  width: 23rem;
+}
+.encabezado .logopequeno {
+  width: 10rem;
+}
+.encabezado .menu {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.6rem;
+}
+.encabezado .menu .menu-button {
+  color: white;
+  text-decoration: none;
+}
+.encabezado .menu .menu-button:hover {
+  color: #000000;
+}
+
+@media (min-width: 1186px) {
+  .navbar {
+    display: none;
+  }
+  .logopequeno {
+    display: none;
+  }
+}
+@media (max-width: 1185px) {
+  .menu {
+    display: none;
+  }
+  .navbar {
+    display: show;
+    flex: 19rem;
+  }
+  .logogrande {
+    display: none;
+  }
+  .logopequeno {
+    display: show;
+  }
+}
+/* aca termina el diseño mediante css de todo lo que es header */
+/* aca comienza todo el diseño mediante css de todo lo que es HERO */
+.render1 {
+  width: 45rem;
+  border: solid 1rem;
+  border-color: #AAABBC;
+}
+
+.hero {
+  background-color: #022F40;
+  color: white;
+  display: grid;
+  grid-template-columns: 5fr 1fr 1.2fr;
+  /* 5fr 1fr 0.5fr para FHD */
+  /* 5fr 1fr 1.2fr para QHD*/
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 3rem;
+}
+
+.hero-text {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.hero-button {
+  font-size: 2rem;
+  display: inline-block;
+  color: white;
+  border: 1px solid white;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+
+.hero-button {
+  color: white;
+  text-decoration: none;
+  border: none;
+  background: none;
+  font-weight: 600;
+}
+
+.hero-button::before {
+  margin-left: auto;
+}
+
+.hero-button::after, .hero-button::before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #A24936;
+  display: block;
+  transition: 0.5s;
+}
+
+.hero-button:hover::after, .hero-button:hover::before {
+  width: 100%;
+}
+
+.titulopro2 {
+  margin: 1rem;
+}
+
+.borde {
+  background-color: #A24936;
+}
+
+@media (max-width: 1110px) {
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 0rem;
+  }
+  .hero-left-grid {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .render-grid {
+    width: 35rem;
+  }
+  .hero-right-grid {
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+}
+@media (max-width: 592px) {
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+  }
+  .hero-left-grid {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .render-grid {
+    width: 22rem;
+  }
+  .hero-right-grid {
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+}
+@media (max-width: 415px) {
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+  }
+  .hero-left-grid {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .render-grid {
+    width: 20rem;
+  }
+  .hero-right-grid {
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+}
+@media (max-width: 415px) {
+  .hero-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+  }
+  .hero-left-grid {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .render-grid {
+    width: 19rem;
+  }
+  .hero-right-grid {
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+}
+/* aca termina todo el diseño mediante css de todo lo que es HERO */
+/* aca comienza todo el diseño mediante css de todo lo que es parte del main, seccion de funcionamiento del servicio */
+.funcion1 {
+  padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+  background-color: #AAABBC;
+}
+
+.funcionamiento {
+  display: grid;
+  grid-template-columns: 4fr 6fr 3fr;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  row-gap: 2rem;
+  text-align: end;
+  align-items: center;
+  background-color: #AAABBC;
+}
+
+.title-hacer {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.text-hacer {
+  font-size: 1.5rem;
+  padding: 2rem;
+  text-align: start;
+}
+
+.casa {
+  width: 15rem;
+}
+
+.lapiz {
+  width: 15rem;
+}
+
+.text-hacer2 {
+  font-size: 1.5rem;
+  padding: 0.8rem;
+}
+
+@media (max-width: 1110px) {
+  .funcionamiento {
+    grid-template-columns: 1fr;
+    align-items: normal;
+    text-align: start;
+  }
+  .hacer-texto {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+@media (max-width: 809px) {
+  .funcionamiento {
+    grid-template-columns: 1fr;
+    align-items: normal;
+    text-align: start;
+  }
+  .hacer-foto {
+    display: none;
+  }
+  .hacer-texto {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+/* aca termina todo el diseño mediante css de todo lo que es parte del main, seccion de funcionamiento del servicio */
+/* aca comienza todo el diseño mediante css de todo lo que es parte del footer */
+.footer {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 3rem;
+  gap: 1rem;
+}
+.footer .footer-1 {
+  flex: 1.7;
+  font-size: 1.2rem;
+  margin-left: 150px;
+}
+.footer .footer-2 {
+  flex: 0.5;
+  font-size: 1.2rem;
+  margin-left: 90px;
+}
+.footer .footer-3 {
+  flex: 1;
+  font-size: 1.2rem;
+  margin-right: 90px;
+}
+.footer .footer-4 {
+  flex: 0.5;
+  font-size: 1.2rem;
+}
+
+.icon-red-social {
+  font-size: 1.5rem;
+}
+
+.copy {
+  margin-top: 40px;
+}
+
+.footer-button {
+  text-decoration: none;
+  color: white;
+}
+.footer-button:hover {
+  color: #AAABBC;
+}
+
+@media (min-width: 1287px) {
+  .footerresp {
+    display: none;
+  }
+}
+@media (max-width: 1286px) {
+  .footer-1 {
+    display: none;
+  }
+}
+@media (max-width: 737px) {
+  .footer-3 {
+    display: none;
+  }
+}
+@media (max-width: 502px) {
+  .footer-2 {
+    display: none;
+  }
+}
+/* aca termina todo el diseño mediante css de todo lo que es parte del footer */
+/* aqui termina todo CSS de INDEX */
+/* aqui comienza todo CSS de PROYECTOS */
+.hero2 {
+  background-color: #022F40;
+  color: rgb(255, 255, 255);
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.proyecto {
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.proyectos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
+.tarjeta1 {
+  background-color: #AAABBC;
+  border: solid;
+  border-color: #A24936;
+  border-radius: 1%;
+  border-style: dashed;
+  grid-column: 2/3;
+}
+
+.tarjeta2 {
+  background-color: #AAABBC;
+  border: solid;
+  border-color: #A24936;
+  border-radius: 1%;
+  border-style: dashed;
+  grid-column: 3/4;
+}
+
+.titulopro {
+  display: flex;
+  font-size: 2rem;
+  color: #000000;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.renderspro {
+  padding: 1rem;
+  width: 45rem;
+}
+
+.explicativo {
+  font-size: 1rem;
+  justify-content: center;
+}/*# sourceMappingURL=estilos.css.map */
