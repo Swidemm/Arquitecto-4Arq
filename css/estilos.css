@@ -437,8 +437,7 @@ ul {
   background-color: #022F40;
   color: #ffffff;
 }
-
-.formstyle {
+.maincon .formstyle {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -455,20 +454,17 @@ ul {
   flex-direction: column;
   border-radius: 10px;
 }
-
-.title {
+.form .title {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 20px;
   color: #1a202c;
 }
-
-.label {
+.form .label {
   color: rgb(0, 0, 0);
   margin-bottom: 4px;
 }
-
-.input {
+.form .input {
   padding: 10px;
   margin-bottom: 20px;
   width: 100%;
@@ -479,8 +475,17 @@ ul {
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
 }
-
-.input2 {
+.form .input:focus {
+  background-color: #fff;
+  box-shadow: 0 0 0 2px #cbd5e0;
+}
+.form .input:valid {
+  border: 1px solid #022F40;
+}
+.form .input:invalid {
+  border: 1px solid rgba(14, 14, 14, 0.205);
+}
+.form .input2 {
   padding: 10px;
   margin-bottom: 20px;
   width: 100%;
@@ -491,21 +496,7 @@ ul {
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
 }
-
-.input:focus {
-  background-color: #fff;
-  box-shadow: 0 0 0 2px #cbd5e0;
-}
-
-.input:valid {
-  border: 1px solid #022F40;
-}
-
-.input:invalid {
-  border: 1px solid rgba(14, 14, 14, 0.205);
-}
-
-.submit {
+.form .submit {
   background-color: #1a202c;
   color: #fff;
   border: none;
