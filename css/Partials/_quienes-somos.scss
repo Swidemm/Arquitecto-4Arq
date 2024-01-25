@@ -3,23 +3,23 @@
     color: $colorTexto;
     .grilla-quienes {
         display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-row: 1fr 1fr;
     }
 }
 .grilla-texto {
+    background-color: $colorOpaco;
+    grid-column: 2/3;
+    grid-row: 1;
     position: relative;
     justify-content: center;
-    grid-column: 2/3;
-    grid-row: 1/2   ;
     text-align: center;
-    margin-left: 15rem;
-    margin-right: 15rem;
+    border-radius: 1rem;
+    padding: 1rem;
 }
+
 .grande {
     font-size: 3rem;
-    &:hover {
-        font-size: 1.85rem;
-        transition-delay: 0.3s;
-      }
 }
 .parrafo {
     font-size: 1.5rem;
@@ -35,7 +35,7 @@
     grid-column: 5/6;
     grid-row: 1;
     color: #1b1b1b;
-    width: 210px;
+    width: 250px;
     height: 350px;
     position: relative;
     outline: 6px solid #f5f5f5;
@@ -46,9 +46,26 @@
     background-blend-mode: multiply;
     background: linear-gradient(to top, #ff930f, #ffcc33);
     transition: background-color 1s ease-in-out;
+    transition: 2s;
     overflow: hidden;
     align-items: center;
-    margin: 2rem;
+    margin: 20rem;
+    box-shadow: 7px 13px 37px black;
+    &:hover {
+      background-color: #1b1b1b25;
+      transition: 1s;
+      height: 500px;
+      width: 500px;
+    }
+    
+    &:hover .carta1-front {
+      transform: translateX(-100%);
+    }
+    
+    &:hover .carta1-back {
+      transform: translateX(0);
+    }
+    
   }
   
   .carta1-front {
@@ -70,37 +87,26 @@
   .title {
     font-size: 1.3rem;
     font-weight: bold;
+    &::after {
+      content: "";
+      display: block;
+      width: 50%;
+      border-radius: 50%;
+      height: 2px;
+      margin: 2px auto;
+      background-color: #1b1b1b;
+    }
   }
-  /*Text divider*/
-  .title::after {
-    content: "";
-    display: block;
-    width: 50%;
-    border-radius: 50%;
-    height: 2px;
-    margin: 2px auto;
-    background-color: #1b1b1b;
-  }
+
   
   
   /*Hover*/
-  .carta1:hover {
-    background-color: #1b1b1b25;
-  }
-  
-  .carta1:hover .carta1-front {
-    transform: translateX(-100%);
-  }
-  
-  .carta1:hover .carta1-back {
-    transform: translateX(0);
-  }
-  
+
   
   .carta2 {
     grid-column: 2/3;
     color: #1b1b1b;
-    width: 210px;
+    width: 250px;
     height: 350px;
     position: relative;
     outline: 6px solid #f5f5f5;
@@ -111,9 +117,27 @@
     background-blend-mode: multiply;
     background: linear-gradient(to top, #ff930f, #ffcc33);
     transition: background-color 1s ease-in-out;
+    transition: 2s;
     overflow: hidden;
-    margin: 2rem;
-  }
+    margin: 13rem;
+    box-shadow: 7px 13px 37px black;
+    
+      &:hover {
+        background-color: #1b1b1b25;
+        transition: 1s;
+        height: 500px;
+        width: 500px;  
+      }
+      
+      &:hover .carta2-front {
+        transform: translateX(-100%);
+      }
+      
+      &:hover .carta2-back {
+        transform: translateX(0);
+      }
+  
+}
   
   .carta2-front {
     bottom: 16px;
@@ -128,55 +152,40 @@
     transform: translateX(120%);
     transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
   }
-  
-  
-  /*Text*/
-  .title {
-    font-size: 1.3rem;
-    font-weight: bold;
-  }
-  /*Text divider*/
-  .title::after {
-    content: "";
-    display: block;
-    width: 50%;
-    border-radius: 50%;
-    height: 2px;
-    margin: 2px auto;
-    background-color: #1b1b1b;
-  }
-  
-  
-  /*Hover*/
-  .carta2:hover {
-    background-color: #1b1b1b25;
-  }
-  
-  .carta2:hover .carta2-front {
-    transform: translateX(-100%);
-  }
-  
-  .carta2:hover .carta2-back {
-    transform: translateX(0);
-  }
-  
+
   
   .carta3 {
-    grid-column: 8/9;
-    color: #1b1b1b;
-    width: 210px;
-    height: 350px;
-    position: relative;
-    outline: 6px solid #f5f5f5;
-    border-radius: 8px;
-    line-height: 150%;
-    padding: 16px;
-    background: #ff930f;
-    background-blend-mode: multiply;
-    background: linear-gradient(to top, #ff930f, #ffcc33);
-    transition: background-color 1s ease-in-out;
-    overflow: hidden;
-     margin: 2rem;
+      grid-column: 8/9;
+      color: #1b1b1b;
+      width: 250px;
+      height: 350px;
+      position: relative;
+      outline: 6px solid #f5f5f5;
+      border-radius: 8px;
+      line-height: 150%;
+      padding: 16px;
+      background: #ff930f;
+      background-blend-mode: multiply;
+      background: linear-gradient(to top, #ff930f, #ffcc33);
+      transition: background-color 1s ease-in-out;
+      transition: 2s;
+      overflow: hidden;
+      margin: 13rem;
+      box-shadow: 7px 13px 37px black;
+      
+      &:hover {
+        background-color: #1b1b1b25;
+        transition: 1s;
+        height: 500px;
+        width: 500px;
+      }
+      &:hover .carta3-front {
+        transform: translateX(-100%);
+      }
+      
+      &:hover .carta3-back {
+        transform: translateX(0);
+      }
   }
   
   .carta3-front {
@@ -192,38 +201,6 @@
     transform: translateX(120%);
     transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
   }
-  
-  
-  /*Text*/
-  .title {
-    font-size: 1.3rem;
-    font-weight: bold;
-  }
-  /*Text divider*/
-  .title::after {
-    content: "";
-    display: block;
-    width: 50%;
-    border-radius: 50%;
-    height: 2px;
-    margin: 2px auto;
-    background-color: #1b1b1b;
-  }
-  
-  
-  /*Hover*/
-  .carta3:hover {
-    background-color: #1b1b1b25;
-  }
-  
-  .carta3:hover .carta3-front {
-    transform: translateX(-100%);
-  }
-  
-  .carta3:hover .carta3-back {
-    transform: translateX(0);
-  }
-
 .pic {
     margin-bottom: 1.2rem;
 }
