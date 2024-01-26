@@ -125,6 +125,7 @@ ul {
   padding: 2rem;
   text-align: center;
   align-items: center;
+  transition: 1s;
 }
 .hero .hero-title {
   font-size: 3rem;
@@ -161,6 +162,7 @@ ul {
   width: 45rem;
   border: solid 1rem;
   border-color: #AAABBC;
+  transition: 1s;
 }
 
 @media (max-width: 1110px) {
@@ -675,7 +677,7 @@ ul {
 @media (min-width: 901px) {
   .carta1:hover {
     background-color: rgba(27, 27, 27, 0.1450980392);
-    transition: 1s;
+    transition: 1.3s;
     height: 500px;
     width: 500px;
   }
@@ -687,10 +689,10 @@ ul {
   }
   .carta2:hover {
     background-color: rgba(27, 27, 27, 0.1450980392);
-    transition: 1s;
+    transition: 1.3s;
     height: 500px;
     width: 500px;
-    transform: translateX(150px);
+    transform: translateX(130px);
   }
   .carta2:hover .carta2-front {
     transform: translateX(-100%);
@@ -700,10 +702,10 @@ ul {
   }
   .carta3:hover {
     background-color: rgba(27, 27, 27, 0.1450980392);
-    transition: 1s;
+    transition: 1.3s;
     height: 500px;
     width: 500px;
-    transform: translateX(-150px);
+    transform: translateX(-130px);
   }
   .carta3:hover .carta3-front {
     transform: translateX(-100%);
@@ -712,7 +714,7 @@ ul {
     transform: translateX(0);
   }
   .carta-texto {
-    transition: 1s;
+    transition: 1.3s;
   }
   .carta-texto:hover {
     font-size: 1.4rem;
@@ -732,7 +734,53 @@ ul {
     grid-column: 1/4;
   }
 }
-@media (max-width: 1091px) {
+@media (max-width: 1826px) and (max-width: 1400px) {
+  .carta1:hover {
+    background-color: rgba(27, 27, 27, 0.1450980392);
+    transition: 1.3s;
+    height: 500px;
+    width: 500px;
+  }
+  .carta1:hover .carta1-front {
+    transform: translateX(-100%);
+  }
+  .carta1:hover .carta1-back {
+    transform: translateX(0);
+  }
+  .carta2:hover {
+    background-color: rgba(27, 27, 27, 0.1450980392);
+    transition: 1.3s;
+    height: 500px;
+    width: 500px;
+    transform: translateX(100px);
+  }
+  .carta2:hover .carta2-front {
+    transform: translateX(-100%);
+  }
+  .carta2:hover .carta2-back {
+    transform: translateX(0);
+  }
+  .carta3:hover {
+    background-color: rgba(27, 27, 27, 0.1450980392);
+    transition: 1.3s;
+    height: 500px;
+    width: 500px;
+    transform: translateX(-100px);
+  }
+  .carta3:hover .carta3-front {
+    transform: translateX(-100%);
+  }
+  .carta3:hover .carta3-back {
+    transform: translateX(0);
+  }
+  .carta-texto {
+    transition: 1.3s;
+  }
+  .carta-texto:hover {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1826px) and (max-width: 1091px) {
   .carta1 {
     margin: 2rem;
   }
@@ -746,13 +794,13 @@ ul {
     grid-column: 1/4;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1826px) and (max-width: 900px) {
   .carta1 {
     margin: 1rem;
   }
   .carta1:hover {
     background-color: rgba(27, 27, 27, 0.1450980392);
-    transition: 1s;
+    transition: 1.3s;
     height: 600px;
     width: 300px;
   }
@@ -767,7 +815,7 @@ ul {
   }
   .carta2:hover {
     background-color: rgba(27, 27, 27, 0.1450980392);
-    transition: 1s;
+    transition: 1.3s;
     height: 600px;
     width: 300px;
   }
@@ -782,7 +830,7 @@ ul {
   }
   .carta3:hover {
     background-color: rgba(27, 27, 27, 0.1450980392);
-    transition: 1s;
+    transition: 1.3s;
     height: 600px;
     width: 300px;
   }
@@ -796,7 +844,7 @@ ul {
     grid-column: 1/4;
   }
 }
-@media (max-width: 834px) {
+@media (max-width: 1826px) and (max-width: 834px) {
   .carta1 {
     margin: 1rem;
     grid-column: 5/6;
@@ -804,7 +852,7 @@ ul {
   }
   .carta1:hover {
     background-color: rgba(27, 27, 27, 0.1450980392);
-    transition: 1s;
+    transition: 1.3s;
     height: 600px;
     width: 300px;
   }
@@ -821,7 +869,7 @@ ul {
   }
   .carta2:hover {
     background-color: rgba(27, 27, 27, 0.1450980392);
-    transition: 1s;
+    transition: 1.3s;
     height: 600px;
     width: 300px;
   }
@@ -838,7 +886,7 @@ ul {
   }
   .carta3:hover {
     background-color: rgba(27, 27, 27, 0.1450980392);
-    transition: 1s;
+    transition: 1.3s;
     height: 600px;
     width: 300px;
   }

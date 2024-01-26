@@ -8,6 +8,7 @@
     padding: 2rem;
     text-align: center;
     align-items: center;
+    transition: 1s;
 
     .hero-title {
         font-size: 3rem;
@@ -47,6 +48,7 @@
     width: 45rem;
     border: solid 1rem;
     border-color: $colorSecundario;
+    transition: 1s;
 }
 
 @media (max-width: 1110px) {
