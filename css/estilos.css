@@ -531,6 +531,7 @@ ul {
   text-align: center;
   border-radius: 1rem;
   padding: 1rem;
+  transition: 1s;
 }
 
 .grande {
@@ -539,6 +540,7 @@ ul {
 
 .parrafo {
   font-size: 1.5rem;
+  transition: 1s;
 }
 
 .grilla-cartas {
@@ -594,6 +596,12 @@ ul {
 .carta1-back {
   transform: translateX(120%);
   transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.carta1-back .carta-texto {
+  transition: 1s;
+}
+.carta1-back .carta-texto:hover {
+  font-size: 1.4rem;
 }
 
 /*Text*/
@@ -657,6 +665,12 @@ ul {
   transform: translateX(120%);
   transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
+.carta2-back .carta-texto {
+  transition: 1s;
+}
+.carta2-back .carta-texto:hover {
+  font-size: 1.4rem;
+}
 
 .carta3 {
   grid-column: 8/9;
@@ -703,7 +717,68 @@ ul {
   transform: translateX(120%);
   transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
+.carta3-back .carta-texto {
+  transition: 1s;
+}
+.carta3-back .carta-texto:hover {
+  font-size: 1.4rem;
+}
 
 .pic {
   margin-bottom: 1.2rem;
+}
+
+@media (max-width: 1826px) {
+  .carta1 {
+    margin: 2rem;
+  }
+  .carta2 {
+    margin: 2rem;
+  }
+  .carta3 {
+    margin: 2rem;
+  }
+  .grilla-texto {
+    grid-column: 1/4;
+  }
+}
+@media (max-width: 905px) {
+  .carta1 {
+    margin: 1rem;
+  }
+  .carta2 {
+    margin: 1rem;
+  }
+  .carta3 {
+    margin: 1rem;
+  }
+  .grilla-texto {
+    grid-column: 1/4;
+  }
+}
+@media (max-width: 834px) {
+  .carta1 {
+    margin: 1rem;
+    grid-column: 5/6;
+    grid-row: 1;
+  }
+  .carta2 {
+    margin: 1rem;
+    grid-column: 5/6;
+    grid-row: 2;
+  }
+  .carta3 {
+    margin: 1rem;
+    grid-column: 5/6;
+    grid-row: 3;
+  }
+  .grilla-texto {
+    grid-column: 1/4;
+  }
+  .parrafo {
+    font-size: 1.1rem;
+  }
+  .grande {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=estilos.css.map */

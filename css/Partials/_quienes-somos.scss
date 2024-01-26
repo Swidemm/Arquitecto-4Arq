@@ -16,6 +16,7 @@
     text-align: center;
     border-radius: 1rem;
     padding: 1rem;
+    transition: 1s;
 }
 
 .grande {
@@ -23,6 +24,7 @@
 }
 .parrafo {
     font-size: 1.5rem;
+    transition: 1s;
 }
 
 .grilla-cartas {
@@ -80,6 +82,12 @@
   .carta1-back {
     transform: translateX(120%);
     transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    .carta-texto {
+      transition: 1s;
+      &:hover {
+        font-size: 1.4rem;
+      }
+    }
   }
   
   
@@ -151,6 +159,12 @@
   .carta2-back {
     transform: translateX(120%);
     transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    .carta-texto {
+      transition: 1s;
+      &:hover {
+        font-size: 1.4rem;
+      }
+    }
   }
 
   
@@ -200,7 +214,69 @@
   .carta3-back {
     transform: translateX(120%);
     transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    .carta-texto {
+      transition: 1s;
+      &:hover {
+        font-size: 1.4rem;
+      }
+    }
   }
 .pic {
     margin-bottom: 1.2rem;
+}
+
+@media (max-width: "1826px") {
+  .carta1 {
+   margin: 2rem;
+  }
+  .carta2 {
+    margin: 2rem;
+  }
+  .carta3 {
+    margin: 2rem;
+  }
+  .grilla-texto {
+    grid-column: 1/4;
+  }
+}
+@media (max-width: "905px") {
+  .carta1 {
+   margin: 1rem;
+  }
+  .carta2 {
+    margin: 1rem;
+  }
+  .carta3 {
+    margin: 1rem;
+  }
+  .grilla-texto {
+    grid-column: 1/4;
+  }
+}
+
+@media (max-width: "834px") {
+  .carta1 {
+   margin: 1rem;
+   grid-column: 5/6;
+   grid-row: 1;
+  }
+  .carta2 {
+    margin: 1rem;
+    grid-column: 5/6;
+    grid-row: 2;
+  }
+  .carta3 {
+    margin: 1rem;
+    grid-column: 5/6;
+    grid-row: 3;
+  }
+  .grilla-texto {
+    grid-column: 1/4;
+  }
+  .parrafo {
+    font-size: 1.1rem;
+  }
+  .grande {
+    font-size: 2rem;
+  }
 }
