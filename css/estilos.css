@@ -720,6 +720,20 @@ ul {
 }
 @media (max-width: 1826px) {
   .carta1 {
+    margin: 5rem;
+  }
+  .carta2 {
+    margin: 5rem;
+  }
+  .carta3 {
+    margin: 5rem;
+  }
+  .grilla-texto {
+    grid-column: 1/4;
+  }
+}
+@media (max-width: 1091px) {
+  .carta1 {
     margin: 2rem;
   }
   .carta2 {
