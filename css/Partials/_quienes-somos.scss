@@ -55,7 +55,10 @@
   transition: 2s;
   overflow: hidden;
   align-items: center;
-  margin: 20rem;
+  margin-top: 17rem;
+  margin-bottom: 13rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
   box-shadow: 7px 13px 37px black;
   .carta1-front {
     bottom: 16px;
@@ -159,13 +162,13 @@
   margin-bottom: 1.2rem;
 }
 
-@media (min-width: "900px") {
+@media (min-width: "901px") {
 .carta1 {
   &:hover {
     background-color: #1b1b1b25;
     transition: 1s;
     height: 500px;
-    width: 500px;  
+    width: 500px;
   }
   
   &:hover .carta1-front {
@@ -181,7 +184,8 @@
     background-color: #1b1b1b25;
     transition: 1s;
     height: 500px;
-    width: 500px;  
+    width: 500px;
+    transform: translateX(150px);
   }
   
   &:hover .carta2-front {
@@ -197,7 +201,8 @@
     background-color: #1b1b1b25;
     transition: 1s;
     height: 500px;
-    width: 500px;  
+    width: 500px;
+    transform: translateX(-150px);  
   }
   
   &:hover .carta3-front {
@@ -214,6 +219,7 @@
     font-size: 1.4rem;
   }
 }
+
 }
 @media (max-width: "1826px") {
 .carta1 {
@@ -228,7 +234,63 @@
 .grilla-texto {
   grid-column: 1/4;
 }
-
+@media (max-width: "1400px") {
+  .carta1 {
+    &:hover {
+      background-color: #1b1b1b25;
+      transition: 1s;
+      height: 500px;
+      width: 500px;
+    }
+    
+    &:hover .carta1-front {
+      transform: translateX(-100%);
+    }
+    
+    &:hover .carta1-back {
+      transform: translateX(0);
+    }
+  }
+  .carta2 {
+    &:hover {
+      background-color: #1b1b1b25;
+      transition: 1s;
+      height: 500px;
+      width: 500px;
+      transform: translateX(100px);
+    }
+    
+    &:hover .carta2-front {
+      transform: translateX(-100%);
+    }
+    
+    &:hover .carta2-back {
+      transform: translateX(0);
+    }
+  }
+  .carta3 {
+    &:hover {
+      background-color: #1b1b1b25;
+      transition: 1s;
+      height: 500px;
+      width: 500px;
+      transform: translateX(-100px);  
+    }
+    
+    &:hover .carta3-front {
+      transform: translateX(-100%);
+    }
+    
+    &:hover .carta3-back {
+      transform: translateX(0);
+    }
+  }
+  .carta-texto {
+    transition: 1s;
+    &:hover {
+      font-size: 1.4rem;
+    }
+  }
 }
 @media (max-width: "1091px") {
   .carta1 {
@@ -245,7 +307,7 @@
   }
 }
   
-@media (max-width: "899px") {
+@media (max-width: "900px") {
 .carta1 {
  margin: 1rem;
  &:hover {
