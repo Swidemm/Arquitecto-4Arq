@@ -372,7 +372,7 @@
  &:hover {
   background-color: #1b1b1b25;
   transition: 1.3s;
-  height: 600px;
+  height: 900px;
   width: 300px;  
 }
 
@@ -391,8 +391,9 @@
   &:hover {
     background-color: #1b1b1b25;
     transition: 1.3s;
-    height: 600px;
-    width: 300px;  
+    height: 750px;
+    width: 300px;
+    transform: translateX(0px);
   }
   
   &:hover .carta2-front {
@@ -410,8 +411,9 @@
     &:hover {
       background-color: #1b1b1b25;
       transition: 1.3s;
-      height: 600px;
-      width: 300px;  
+      height: 800px;
+      width: 300px;
+      transform: translateX(0px);  
     }
     
     &:hover .carta3-front {

@@ -853,7 +853,7 @@ ul {
   .carta1:hover {
     background-color: rgba(27, 27, 27, 0.1450980392);
     transition: 1.3s;
-    height: 600px;
+    height: 900px;
     width: 300px;
   }
   .carta1:hover .carta1-front {
@@ -870,8 +870,9 @@ ul {
   .carta2:hover {
     background-color: rgba(27, 27, 27, 0.1450980392);
     transition: 1.3s;
-    height: 600px;
+    height: 750px;
     width: 300px;
+    transform: translateX(0px);
   }
   .carta2:hover .carta2-front {
     transform: translateX(-100%);
@@ -887,8 +888,9 @@ ul {
   .carta3:hover {
     background-color: rgba(27, 27, 27, 0.1450980392);
     transition: 1.3s;
-    height: 600px;
+    height: 800px;
     width: 300px;
+    transform: translateX(0px);
   }
   .carta3:hover .carta3-front {
     transform: translateX(-100%);
