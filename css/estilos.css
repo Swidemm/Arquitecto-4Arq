@@ -780,28 +780,32 @@ ul {
     font-size: 1.4rem;
   }
 }
-@media (max-width: 1826px) and (max-width: 1091px) {
+@media (max-width: 1826px) and (max-width: 1280px) {
   .carta1 {
-    margin: 2rem;
+    margin: 1.5rem;
+    margin-bottom: 4.5rem;
   }
   .carta2 {
-    margin: 2rem;
+    margin: 1.5rem;
+    margin-bottom: 4.5rem;
   }
   .carta3 {
-    margin: 2rem;
+    margin: 1.5rem;
+    margin-bottom: 4.5rem;
   }
   .grilla-texto {
     grid-column: 1/4;
   }
 }
-@media (max-width: 1826px) and (max-width: 900px) {
+@media (max-width: 1826px) and (max-width: 1050px) {
   .carta1 {
     margin: 1rem;
+    margin-bottom: 4.5rem;
   }
   .carta1:hover {
     background-color: rgba(27, 27, 27, 0.1450980392);
     transition: 1.3s;
-    height: 600px;
+    height: 900px;
     width: 300px;
   }
   .carta1:hover .carta1-front {
@@ -812,11 +816,12 @@ ul {
   }
   .carta2 {
     margin: 1rem;
+    margin-bottom: 4.5rem;
   }
   .carta2:hover {
     background-color: rgba(27, 27, 27, 0.1450980392);
     transition: 1.3s;
-    height: 600px;
+    height: 750px;
     width: 300px;
   }
   .carta2:hover .carta2-front {
@@ -827,11 +832,12 @@ ul {
   }
   .carta3 {
     margin: 1rem;
+    margin-bottom: 4.5rem;
   }
   .carta3:hover {
     background-color: rgba(27, 27, 27, 0.1450980392);
     transition: 1.3s;
-    height: 600px;
+    height: 765px;
     width: 300px;
   }
   .carta3:hover .carta3-front {
@@ -844,7 +850,7 @@ ul {
     grid-column: 1/4;
   }
 }
-@media (max-width: 1826px) and (max-width: 834px) {
+@media (max-width: 1826px) and (max-width: 838px) {
   .carta1 {
     margin: 1rem;
     grid-column: 5/6;

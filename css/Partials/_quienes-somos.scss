@@ -292,79 +292,83 @@
     }
   }
 }
-@media (max-width: "1091px") {
+
+@media (max-width: "1280px") {
   .carta1 {
-   margin: 2rem;
+   margin: 1.5rem;
+   margin-bottom: 4.5rem;
   }
   .carta2 {
-    margin: 2rem;
+    margin: 1.5rem;
+    margin-bottom: 4.5rem;
   }
   .carta3 {
-    margin: 2rem;
+    margin: 1.5rem;
+    margin-bottom: 4.5rem;
   }
   .grilla-texto {
     grid-column: 1/4;
   }
 }
   
-@media (max-width: "900px") {
-.carta1 {
- margin: 1rem;
- &:hover {
-  background-color: #1b1b1b25;
-  transition: 1.3s;
-  height: 600px;
-  width: 300px;  
-}
-
-&:hover .carta1-front {
-  transform: translateX(-100%);
-}
-
-&:hover .carta1-back {
-  transform: translateX(0);
-}
-}
-.carta2 {
-  margin: 1rem;
-  &:hover {
+@media (max-width: "1050px") {
+  .carta1 {
+   margin: 1rem;
+   margin-bottom: 4.5rem;
+   &:hover {
     background-color: #1b1b1b25;
     transition: 1.3s;
-    height: 600px;
-    width: 300px;  
+    height: 900px;
+    width: 300px;
+    }
+    &:hover .carta1-front {
+      transform: translateX(-100%);
+    }
+    
+    &:hover .carta1-back {
+      transform: translateX(0);
+    }
   }
-  
-  &:hover .carta2-front {
-    transform: translateX(-100%);
+  .carta2 {
+    margin: 1rem;
+    margin-bottom: 4.5rem;
+    &:hover {
+      background-color: #1b1b1b25;
+      transition: 1.3s;
+      height: 750px;
+      width: 300px;  
+    }
+    &:hover .carta2-front {
+      transform: translateX(-100%);
+    }
+    
+    &:hover .carta2-back {
+      transform: translateX(0);
+    }
   }
-  
-  &:hover .carta2-back {
-    transform: translateX(0);
+  .carta3 {
+    margin: 1rem;
+    margin-bottom: 4.5rem;
+    &:hover {
+      background-color: #1b1b1b25;
+      transition: 1.3s;
+      height: 765px;
+      width: 300px;  
+    }
+    &:hover .carta3-front {
+      transform: translateX(-100%);
+    }
+    
+    &:hover .carta3-back {
+      transform: translateX(0);
+    }
   }
-}
-.carta3 {
-  margin: 1rem;
-  &:hover {
-    background-color: #1b1b1b25;
-    transition: 1.3s;
-    height: 600px;
-    width: 300px;  
+  .grilla-texto {
+    grid-column: 1/4;
   }
-  
-  &:hover .carta3-front {
-    transform: translateX(-100%);
-  }
-  
-  &:hover .carta3-back {
-    transform: translateX(0);
-  }
-}
-.grilla-texto {
-  grid-column: 1/4;
-}
 }
 
-@media (max-width: "834px") {
+@media (max-width: "838px") {
 .carta1 {
  margin: 1rem;
  grid-column: 5/6;
