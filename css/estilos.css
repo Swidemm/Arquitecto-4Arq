@@ -148,7 +148,7 @@ ul {
 }
 .hero .hero-button::after, .hero .hero-button::before {
   content: "";
-  width: 5%;
+  width: 0%;
   height: 3px;
   background: #A24936;
   display: block;
