@@ -13,6 +13,16 @@
         width: 10rem;
         position: relative;
     }
+    .navbar {
+        position: absolute;
+        right: 2rem;
+        .offcanvas-title{
+            font-size: 1.8rem;
+        }
+        .nav-item {
+            font-size: 1.5rem;
+        }
+    }
 
     .menu {
         display: flex;
@@ -71,10 +81,7 @@
     }
 }
 
-.navbar {
-    position: absolute;
-    right: 2rem;
-}
+
 
 @media (max-width: 1376px) {
     .menu-button {

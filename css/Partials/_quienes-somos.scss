@@ -500,4 +500,26 @@
       font-size: 2rem;
     }
   }
-}    
+}
+@media (min-width: "479px") {
+  .parrafo-resp {
+    display: none;
+  }
+}
+@media (max-width: "478px") {
+  .parrafo {
+    display: none;
+  }
+  .parrafo-resp {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: "330px") {
+  .grande {
+    font-size: 1.7rem;
+  }
+  .somos {
+    font-size: 1.5rem;
+  }
+}
