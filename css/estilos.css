@@ -1048,6 +1048,18 @@ ul {
   transition: all 0.2s ease-in-out;
 }
 
+.container-map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.container-map .map {
+  background-color: rgba(170, 171, 188, 0.1529411765);
+  padding: 1rem;
+  position: relative;
+}
+
 @media (max-width: 984px) {
   .titulo-trabajo {
     margin-left: 8rem;
@@ -1055,6 +1067,19 @@ ul {
   }
   .titulo-trabajo2 {
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 804px) {
+  .tile-map {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 602px) {
+  .tile-map {
+    font-size: 1.3rem;
+  }
+  .map {
+    width: 25rem;
   }
 }
 @media (max-width: 658px) {
@@ -1082,5 +1107,15 @@ ul {
   }
   .titulo-trabajo2 {
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 390px) {
+  .map {
+    width: 23rem;
+  }
+}
+@media (max-width: 365px) {
+  .map {
+    width: 21rem;
   }
 }/*# sourceMappingURL=estilos.css.map */
